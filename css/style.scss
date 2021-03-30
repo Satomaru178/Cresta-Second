@@ -37,5 +37,59 @@ a {
 header
 ------------------*/
 #header {
-  background-image: url(../img/fv-bgi_01@2x.jpg);
+  position: relative;
+  .header-top {
+    height: 96px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    .header-inner {
+      max-width: 1260px;
+      align-items: center;
+      margin: 0 auto;
+      padding: 30px;
+      .header-logo  {
+        line-height: 1em;
+        a {
+          display: block;
+          color: #fff;
+        }
+      }
+      #nav {
+        .flex-item {
+          justify-content: end;
+          li {
+            a {
+              color: #fff;
+            }
+            &:not(:last-of-type) {
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+    &.change {
+      z-index: 20;
+      background-color: #282F35;
+    }
+  }
+  .header-text {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    text-align: center;
+    h2 {
+      font-size: 70px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 40px;
+    }
+  }
 }
