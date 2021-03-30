@@ -1,0 +1,45 @@
+/*------------------
+common
+------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Noto Serif JP', serif;
+  font-family: 'Noto Serif', serif;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*------------------
+header
+------------------*/
+#header {
+  background-image: url(../img/fv-bgi_01@2x.jpg);
+}
+/*# sourceMappingURL=style.css.map */
