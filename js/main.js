@@ -37,3 +37,17 @@
       }
     });
 
+    /*=================================================
+    スライダー
+    ===================================================*/
+    $('.slick-slider').slick({
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+    });
+  });
+}
