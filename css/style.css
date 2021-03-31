@@ -35,6 +35,10 @@ a {
           justify-content: space-between;
 }
 
+section {
+  padding: 100px 0 70px 0;
+}
+
 /*------------------
 header
 ------------------*/
