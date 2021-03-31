@@ -30,7 +30,7 @@
 
     $win.on('load scroll', function () {
       var value = $(this).scrollTop();
-      if (value > mainPos/3) {
+      if (value > (mainPos/3 - 10)) {
         $header.addClass(changedClass);
       } else {
         $header.removeClass(changedClass);
