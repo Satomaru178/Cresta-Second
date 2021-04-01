@@ -149,3 +149,30 @@ header
     }
   }
 }
+/*------------------
+concept
+------------------*/
+#concept {
+  .wrapper {
+    .concept-text {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+    .flex-item {
+      .item {
+        width: 50%;
+      }
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 2em;
+        text-align: left;
+        padding: 47px 60px 47px 0;
+      }
+      .concept-img {
+        padding-left: 60px;
+      }
+    }
+  }
+}
