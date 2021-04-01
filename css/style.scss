@@ -176,3 +176,37 @@ concept
     }
   }
 }
+/*------------------
+works
+------------------*/
+#works {
+  background-image: url(../img/works-bgi@2x.jpg);
+  background-size: cover;
+  .flex-item {
+    margin-bottom: 80px;
+    .item {
+      width: 32%;
+      background-color: #fff;
+      box-shadow: 0 0 8px #171717;
+      p {
+        padding: 25px 20px;
+        font-size: 16px;
+        line-height: 2em;
+      }
+    }
+  }
+  .view-more {
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #171717;
+      background-color: #F7D43F;
+      padding: 17px 70px;
+      user-select: none;
+      border-radius: 30px;
+      box-shadow: 0 0 3px #1B1310;
+      font-weight: bold;
+      letter-spacing: .1rem;
+    }
+  }
+}
