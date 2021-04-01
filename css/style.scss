@@ -71,6 +71,24 @@ section {
     }
   }
 }
+
+.sec-copy {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 70px auto 0;
+  max-width: 1200px;
+  &.right {
+    color: #171717;
+    opacity: 5%;
+    text-align: right;
+  }
+  &.left {
+    color: #fff;
+    opacity: 10%;
+    text-align: left;
+  }
+}
+
 /*------------------
 header
 ------------------*/
