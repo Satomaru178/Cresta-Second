@@ -91,6 +91,23 @@ section {
   }
 }
 
+.button {
+  text-align: center;
+  height: 60px;
+  a {
+    line-height: 60px;
+    text-decoration: none;
+    color: #171717;
+    background-color: #F7D43F;
+    padding: 17px 70px;
+    user-select: none;
+    border-radius: 30px;
+    box-shadow: 0 0 3px #1B1310;
+    font-weight: bold;
+    letter-spacing: .1rem;
+  }
+}
+
 /*------------------
 header
 ------------------*/
@@ -197,21 +214,8 @@ works
       }
     }
   }
-  .view-more {
-    text-align: center;
-    a {
-      text-decoration: none;
-      color: #171717;
-      background-color: #F7D43F;
-      padding: 17px 70px;
-      user-select: none;
-      border-radius: 30px;
-      box-shadow: 0 0 3px #1B1310;
-      font-weight: bold;
-      letter-spacing: .1rem;
-    }
-  }
 }
+
 /*------------------
 service
 ------------------*/
