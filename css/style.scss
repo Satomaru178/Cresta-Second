@@ -282,3 +282,12 @@ contact
 /*------------------
 footer
 ------------------*/
+#footer {
+  height: 80px;
+  text-align: center;
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 80px;
+  }
+}
