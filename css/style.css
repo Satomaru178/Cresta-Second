@@ -77,6 +77,8 @@ section {
       -ms-flex-pack: end;
           justify-content: flex-end;
   color: #fff;
+  max-width: 1200px;
+  margin: 0 auto 70px;
 }
 
 .sec-title.right::after {
@@ -103,6 +105,28 @@ section {
   color: #fff;
   opacity: 10%;
   text-align: left;
+}
+
+.button {
+  text-align: center;
+  height: 60px;
+}
+
+.button a {
+  line-height: 60px;
+  text-decoration: none;
+  color: #171717;
+  background-color: #F7D43F;
+  padding: 17px 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 3px #1B1310;
+          box-shadow: 0 0 3px #1B1310;
+  font-weight: bold;
+  letter-spacing: .1rem;
 }
 
 /*------------------
@@ -177,6 +201,15 @@ header
   font-size: 40px;
 }
 
+#header .page-title {
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(50% - 30px);
+}
+
 /*------------------
 concept
 ------------------*/
@@ -227,26 +260,6 @@ works
   line-height: 2em;
 }
 
-#works .view-more {
-  text-align: center;
-}
-
-#works .view-more a {
-  text-decoration: none;
-  color: #171717;
-  background-color: #F7D43F;
-  padding: 17px 70px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 3px #1B1310;
-          box-shadow: 0 0 3px #1B1310;
-  font-weight: bold;
-  letter-spacing: .1rem;
-}
-
 /*------------------
 service
 ------------------*/
@@ -255,10 +268,27 @@ service
 }
 
 #service .flex-item .item {
+  width: 33.3%;
+  background-size: cover;
+}
+
+#service .flex-item .item a {
+  display: block;
   width: 100%;
-  height: 100%;
   text-align: center;
-  background-size: contain;
+  color: #fff;
+  line-height: 320px;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#service .flex-item .item a:hover {
+  background-color: rgba(40, 47, 53, 0.7);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 #service .flex-item .item1 {
@@ -277,7 +307,31 @@ service
 /*------------------
 contact
 ------------------*/
+#contact {
+  background-image: url(../img/contact-bgi@2x.jpg);
+  background-size: cover;
+}
+
+#contact .wrapper {
+  text-align: center;
+}
+
+#contact .wrapper p {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
 /*------------------
 footer
 ------------------*/
+#footer {
+  height: 80px;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 80px;
+}
 /*# sourceMappingURL=style.css.map */
