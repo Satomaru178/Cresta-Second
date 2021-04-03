@@ -9,29 +9,34 @@
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </head>
 
 <body>
-  <header id="contact-header">
+  <header id="header" class="contact">
     <div class="header-top">
-      <div class="header-inner">
-        <h1 class="header-logo">Cresta Design</h1>
+      <div class="header-inner flex-item">
+        <h1 class="header-logo"><a href="#">Cresta Design</a></h1>
+        <nav id="nav">
+          <ul class="flex-item">
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navi-menu">
-        <ul>
-          <li><a href="#concept">Concept</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    </div>
+
+    <div class="contact-fv">
+      <img src="../img/contact-page-bgi@2x.jpg" alt="おしゃれなオフィスのフリースペース">
     </div>
 
     <h2 class="page-title">Contact</h2>
+    <h4 class="sec-copy left">Contact us</h4>
   </header>
 
   <main id="contact-main">
