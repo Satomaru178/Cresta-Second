@@ -63,6 +63,8 @@ section {
   &.right {
     justify-content: flex-end;
     color: #fff;
+    max-width: 1200px;
+    margin: 0 auto 70px;
     &::after {
       content: "";
       width: 200px;
