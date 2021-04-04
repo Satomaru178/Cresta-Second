@@ -283,3 +283,59 @@ footer
     line-height: 80px;
   }
 }
+
+/*------------------
+contact-page
+------------------*/
+.contact-header {
+  background-image: url(../img/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .page-title {
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+  }
+  .sec-copy {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+  }
+}
+.contact-main {
+  .form-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 15px 80px;
+    label[for] {
+      display: block;
+    }
+    .full-width {
+      width: 100%;
+      border: 1px solid #141414;
+    }
+    .form-item {
+      margin-bottom: 25px;
+      input[type='checkbox'] {
+        margin-right: 10px;
+      }
+      .check-item {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+    textarea {
+      margin-bottom: 80px;
+    }
+    .button {
+      .button-inner {
+        padding: 0 70px;
+      }
+    }
+  }
+}
