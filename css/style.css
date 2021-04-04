@@ -112,19 +112,19 @@ section {
   height: 60px;
 }
 
-.button a {
+.button .button-inner {
   line-height: 60px;
   text-decoration: none;
   color: #171717;
-  background-color: #F7D43F;
+  background-color: #f7d540;
   padding: 17px 70px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   border-radius: 30px;
-  -webkit-box-shadow: 0 0 3px #1B1310;
-          box-shadow: 0 0 3px #1B1310;
+  -webkit-box-shadow: 0 0 5px #1B1310;
+          box-shadow: 0 0 5px #1B1310;
   font-weight: bold;
   letter-spacing: .1rem;
 }
@@ -199,15 +199,6 @@ header
 
 #header .header-text p {
   font-size: 40px;
-}
-
-#header .page-title {
-  font-size: 60px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 0 auto;
-  position: absolute;
-  top: calc(50% - 30px);
 }
 
 /*------------------
@@ -333,5 +324,73 @@ footer
   font-size: 14px;
   font-weight: bold;
   line-height: 80px;
+}
+
+/*------------------
+contact-page
+------------------*/
+.contact-header {
+  background-image: url(../img/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-header .page-title {
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-header .sec-copy {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.contact-main .form-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 15px 80px;
+}
+
+.contact-main .form-wrapper label[for] {
+  display: block;
+}
+
+.contact-main .form-wrapper .full-width {
+  width: 100%;
+  border: 1px solid #141414;
+}
+
+.contact-main .form-wrapper .form-item {
+  margin-bottom: 25px;
+}
+
+.contact-main .form-wrapper .form-item input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.contact-main .form-wrapper .form-item .check-item {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.contact-main .form-wrapper textarea {
+  margin-bottom: 80px;
+}
+
+.contact-main .form-wrapper .button .button-inner {
+  padding: 0 70px;
 }
 /*# sourceMappingURL=style.css.map */
