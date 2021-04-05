@@ -119,14 +119,13 @@ header
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     z-index: 10;
     width: 100%;
     .header-inner {
-      max-width: 1260px;
+      max-width: 1200px;
       align-items: center;
       margin: 0 auto;
-      padding: 30px;
+      padding: 30px 15px;
       .header-logo  {
         line-height: 1em;
         a {
