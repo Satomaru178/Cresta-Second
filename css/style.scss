@@ -517,3 +517,36 @@ SP
     }
   }
 
+  /*------------------
+  concept-sp
+  ------------------*/
+  #concept {
+    .wrapper {
+      .concept-text {
+        font-size: 20px;
+        margin-bottom: 34px;
+        .pc-only {
+          display: none;
+        }
+      }
+      .flex-item {
+        flex-direction: column;
+        .item {
+          width: 100%;
+        }
+        p {
+          padding: 0;
+          margin-bottom: 30px;
+        }
+        .concept-img {
+          padding: 0;
+          img {
+            height: 150px;
+            object-fit: cover;
+            object-position: bottom;
+          }
+        }
+      }
+    }
+  }
+
