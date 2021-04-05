@@ -550,3 +550,19 @@ SP
     }
   }
 
+  /*------------------
+  works-sp
+  ------------------*/
+  #works {
+    background-position: center;
+    .flex-item {
+      flex-direction: column;
+      .item {
+        width: 100%;
+        &:not(:last-of-type) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
