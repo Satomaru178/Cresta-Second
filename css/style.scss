@@ -146,6 +146,9 @@ header
           }
         }
       }
+      .menu-btn {
+        display: none;
+      }
     }
     &.change {
       z-index: 20;
