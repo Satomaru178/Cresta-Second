@@ -595,3 +595,29 @@ SP
     background-position: center;
   }
 
+  /*------------------
+  contact-page-sp
+  ------------------*/
+  .contact-header {
+    .page-title {
+      font-size: 30px;
+    }
+    .sec-copy {
+      left: 15px;
+    }
+  }
+  .contact-main {
+    .form-wrapper {
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .check {
+        margin-bottom: 15px;
+      }
+      textarea {
+        height: 170px;
+      }
+    }
+  }
+}
