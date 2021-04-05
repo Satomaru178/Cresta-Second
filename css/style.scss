@@ -156,11 +156,13 @@ header
     }
   }
   .header-text {
+    max-width: 1200px;
+    padding: 0 15px;
     color: #fff;
     font-weight: bold;
     position: absolute;
-    top: 52%;
-    left: 10%;
+    bottom: 177px;
+    left: 120px;
     text-align: center;
     h2 {
       font-size: 70px;
