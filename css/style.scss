@@ -170,6 +170,9 @@ header
     }
     p {
       font-size: 40px;
+      .sp-only {
+        display: none;
+      }
     }
   }
 }
