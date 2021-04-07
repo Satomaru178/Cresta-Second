@@ -166,11 +166,23 @@ header
       transition: .4s;
     }
   }
-  .header-text {
-    max-width: 1200px;
-    padding: 0 15px;
-    color: #fff;
-    font-weight: bold;
+}
+
+/*------------------
+fv
+------------------*/
+#fv {
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  img {
+    height: 100vh;
+    min-height: 550px;
+    object-fit: cover;
+  }
+  .fv-text {
     position: absolute;
     bottom: 177px;
     left: 120px;
