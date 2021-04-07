@@ -530,12 +530,22 @@ SP
         }
       }
     }
-    .header-fv {
-      display: none;
+    &.contact-header {
+      background-image: url(../img/contact-page-bgi@2x.jpg);
+      background-position: center;
+      height: 360px;
     }
-    .header-text {
-      position: static;
-      width: 100%;
+  }
+
+  /*------------------
+  fv-sp
+  ------------------*/
+  #fv {
+    .fv-text {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
       h2 {
         font-size: 37px;
         margin-bottom: 60px;
