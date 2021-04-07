@@ -427,20 +427,12 @@ SP
     font-size: 40px;
     font-weight: bold;
     margin: 40px auto 0;
-    letter-spacing: normal;
   }
 
   /*------------------
   header-sp
   ------------------*/
   #header {
-    background-image: url(../img/fv-bgi_01@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .header-top {
       .header-inner {
         .header-logo  {
