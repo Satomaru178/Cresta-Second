@@ -108,6 +108,10 @@ section {
     box-shadow: 0 0 5px #1B1310;
     font-weight: bold;
     letter-spacing: .1rem;
+    &:hover {
+      opacity: .7;
+      transition: .3s;
+    }
   }
 }
 
