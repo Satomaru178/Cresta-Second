@@ -162,6 +162,8 @@ header
     &.change {
       z-index: 20;
       background-color: #282F35;
+      position: fixed;
+      transition: .4s;
     }
   }
   .header-text {
