@@ -22,20 +22,36 @@
     /*=================================================
     sticky header
     ===================================================*/
-    var $win = $(window),
-      $header = $('.header-top'),
-      $main = $('#main'),
-      mainPos = $main.offset().top,
-      changedClass = 'change';
+    // var $win = $(window),
+    //   $header = $('.header-top'),
+    //   $main = $('#main'),
+    //   mainPos = $main.offset().top,
+    //   changedClass = 'change';
 
-    $win.on('load scroll', function () {
-      var value = $(this).scrollTop();
-      if (value > (mainPos / 3)) {
-        $header.addClass(changedClass);
-      } else {
-        $header.removeClass(changedClass);
-      }
-    });
+    // $win.on('load scroll', function () {
+    //   var value = $(this).scrollTop();
+    //   if ($ > 768) {
+    //     $header.addClass(changedClass);
+    //   } else {
+    //     $header.removeClass(changedClass);
+    //   }
+    // });
+
+    var $win = $(window),
+        $fv = $('#fv'),
+        $headerTop = $('.header-top'),
+        headerHeight = $fv.outerHeight(),
+        changeClass = 'change';
+      $win.on('load scroll', function () {
+        var value = $(this).scrollTop();
+        if ($win.width() > 768) {
+          if (value > headerHeight) {
+            $headerTop.addClass(changeClass);
+          } else {
+            $headerTop.removeClass(changeClass);
+          }
+        }
+      });
 
     /*=================================================
     slider
