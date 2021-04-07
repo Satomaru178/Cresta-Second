@@ -97,6 +97,7 @@ section {
   text-align: center;
   height: 60px;
   .button-inner {
+    transition: .3s;
     line-height: 60px;
     text-decoration: none;
     color: #171717;
