@@ -8,6 +8,7 @@ html {
 body {
   min-width: 375px;
   font-family: 'Noto Serif', 'Noto Serif JP', serif;
+  letter-spacing: .05em;
 }
 
 img {
@@ -26,7 +27,6 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: .2rem;
   font-style: italic;
 }
 
@@ -428,23 +428,46 @@ contact-page
   cursor: pointer;
 }
 
+.contact-main .form-wrapper .form-item .form-label {
+  font-weight: bold;
+}
+
+.contact-main .form-wrapper .form-item .input-text {
+  line-height: 30px;
+  padding: 0 8px;
+}
+
 .contact-main .form-wrapper textarea {
+  height: 170px;
   margin-bottom: 80px;
+  padding: 8px;
 }
 
 .contact-main .form-wrapper .button .button-inner {
   padding: 0 70px;
+  border: none;
+}
+
+.contact-main .form-wrapper input,
+.contact-main .form-wrapper textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  resize: none;
 }
 
 /*------------------
 SP
 ------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   /*------------------
   common-sp
   ------------------*/
   section {
     padding: 100px 15px 40px;
+  }
+  body.noscroll {
+    overflow: hidden;
   }
   .sec-title {
     font-size: 30px;
@@ -468,26 +491,10 @@ SP
     font-size: 40px;
     font-weight: bold;
     margin: 40px auto 0;
-    letter-spacing: normal;
   }
   /*------------------
   header-sp
   ------------------*/
-  #header {
-    background-image: url(../img/fv-bgi_01@2x.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   #header .header-top .header-inner .header-logo {
     font-size: 26px;
     letter-spacing: 2px;
@@ -588,28 +595,29 @@ SP
     z-index: 20;
     background-color: #282F35;
   }
-  #header .header-fv {
-    display: none;
-  }
-  #header .header-text {
-    position: static;
-    width: 100%;
-  }
-  #header .header-text h2 {
-    font-size: 37px;
-    margin-bottom: 60px;
-    letter-spacing: normal;
-  }
-  #header .header-text p {
-    font-size: 30px;
-  }
-  #header .header-text p .sp-only {
-    display: block;
-  }
   #header.contact-header {
     background-image: url(../img/contact-page-bgi@2x.jpg);
     background-position: center;
     height: 360px;
+  }
+  /*------------------
+  fv-sp
+  ------------------*/
+  #fv .fv-text {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #fv .fv-text h2 {
+    font-size: 9.8vw;
+    white-space: nowrap;
+  }
+  #fv .fv-text p {
+    font-size: 30px;
+  }
+  #fv .fv-text p .sp-only {
+    display: block;
   }
   /*------------------
   concept-sp
@@ -666,7 +674,13 @@ SP
   service-sp
   ------------------*/
   #service {
-    overflow: hidden;
+    padding: 100px 0 40px;
+  }
+  #service .sec-title {
+    padding-left: 4vw;
+  }
+  #service .sec-copy {
+    margin-right: 4vw;
   }
   #service .flex-item {
     margin-bottom: 40px;
@@ -684,7 +698,7 @@ SP
   }
   #service .flex-item .item a {
     line-height: 250px;
-    font-size: 20px;
+    font-size: 40px;
   }
   /*------------------
   contact-sp
