@@ -4,8 +4,9 @@
     /*=================================================
     burger menu
     ===================================================*/
-    $('.menu-btn, #mask').on('click', function () {
-      $('.menu-btn, #nav, #mask').toggleClass('open');
+    $('.menu-btn').on('click', function () {
+      $('.menu-btn, #nav').toggleClass('open');
+      $('body').toggleClass('noscroll');
     });
 
     /*=================================================
