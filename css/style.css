@@ -115,6 +115,8 @@ section {
 }
 
 .button .button-inner {
+  -webkit-transition: .3s;
+  transition: .3s;
   line-height: 60px;
   text-decoration: none;
   color: #171717;
