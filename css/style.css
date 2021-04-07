@@ -133,6 +133,12 @@ section {
   letter-spacing: .1rem;
 }
 
+.button .button-inner:hover {
+  opacity: .7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 /*------------------
 header
 ------------------*/
@@ -142,7 +148,7 @@ header
 
 #header .header-top {
   height: 96px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 10;
@@ -156,6 +162,8 @@ header
           align-items: center;
   margin: 0 auto;
   padding: 30px 15px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 #header .header-top .header-inner .header-logo {
@@ -188,29 +196,48 @@ header
 #header .header-top.change {
   z-index: 20;
   background-color: #282F35;
+  position: fixed;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-#header .header-text {
-  max-width: 1200px;
-  padding: 0 15px;
+/*------------------
+fv
+------------------*/
+#fv {
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+#fv img {
+  height: 100vh;
+  min-height: 550px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#fv .fv-text {
+  position: absolute;
+  left: 120px;
+  bottom: 177px;
   color: #fff;
   font-weight: bold;
-  position: absolute;
-  bottom: 177px;
-  left: 120px;
-  text-align: center;
 }
 
-#header .header-text h2 {
+#fv .fv-text h2 {
   font-size: 70px;
   margin-bottom: 30px;
 }
 
-#header .header-text p {
+#fv .fv-text p {
   font-size: 40px;
+  text-align: center;
 }
 
-#header .header-text p .sp-only {
+#fv .fv-text p .sp-only {
   display: none;
 }
 
@@ -262,6 +289,7 @@ works
   padding: 25px 20px;
   font-size: 16px;
   line-height: 2em;
+  color: #171717;
 }
 
 /*------------------
