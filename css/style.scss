@@ -363,14 +363,30 @@ contact-page
         margin-right: 15px;
         cursor: pointer;
       }
+      .form-label {
+        font-weight: bold;
+      }
+      .input-text {
+        line-height: 30px;
+        padding: 0 8px;
+      }
     }
     textarea {
+      height: 170px;
       margin-bottom: 80px;
+      padding: 8px;
     }
     .button {
       .button-inner {
         padding: 0 70px;
+        border: none;
       }
+    }
+    input,
+    textarea {
+      box-sizing: border-box;
+      outline: none;
+      resize: none;
     }
   }
 }
