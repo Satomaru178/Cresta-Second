@@ -613,7 +613,13 @@ SP
   service-sp
   ------------------*/
   #service {
-    overflow: hidden;
+    padding: 100px 0 40px;
+    .sec-title {
+      padding-left: 4vw;
+    }
+    .sec-copy {
+      margin-right: 4vw;
+    }
     .flex-item {
       margin-bottom: 40px;
       flex-direction: column;
